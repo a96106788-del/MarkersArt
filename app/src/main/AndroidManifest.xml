@@ -2,11 +2,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <application
         android:allowBackup="true"
-        android:label="Markers Art"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.MarkersArt">
+        android:label="Master Flow"
+        android:theme="@style/Theme.MarkersArt"
+        android:usesCleartextTraffic="true">
 
         <activity
             android:name=".MainActivity"
@@ -20,5 +24,5 @@
         </activity>
 
     </application>
-
 </manifest>
+
